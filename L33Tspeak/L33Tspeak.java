@@ -23,6 +23,7 @@ public class L33Tspeak {
 			System.out.println(e.getMessage());
 		}
 	}
+
 	public enum Leet {
 		A("a", "4"),
 		B("b", "6"),
