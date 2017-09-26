@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS Test Site</title>
+
+  <meta charset="utf-8"/>
+  <meta name="author" content="Tony Kraus"/>
+  <meta name="description" content="mockup"/>
+  <meta name="viewport" content="width=device-width"/>
+
+  <link rel="stylesheet" href="style.css" type="text/css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alice" type="text/css">
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="style.js"></script>
+  <script src="https://d3js.org/d3.v4.js"></script>
+  <script src="http://underscorejs.org/underscore.js"></script>
+  <script src="https://bl.ocks.org/syntagmatic/raw/3341641/render-queue.js"></script>
+
+</head>
+<body>
+  <div class="slide">
+    <header class="header header-down">
+      <nav role="navigation" class="nav">
+        <ul>
+          <li id="tab1"><a href="">Stuff</a></li>
+          <li id="tab2"><a href="">Other Stuff</a></li>
+          <li id="tab3"><a href="">More Stuff</a></li>
+          <li id="tab4"><a href="">Things</a></li>
+          </ul>
+        </nav>
+    </header>
+    <h3>JavaScript Testing Website</h3>
+    <h1>&darr; Cool stuff can be found below &darr;</h1>
+  </div>
+  <section class="graph">
+    <h3>JS Graph</h3>
+    <p>
+      This graph displays climate data for Iowa from the years 2008 to 2016
+    </p>
+    <div id="chart">
+      <script src="graph.js"></script>
+    </div>
+    <div id="map">
+      <script src="gmap.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhlptAxP1QzXSmT83-zXjfDs7B0o9b2-E&callback=initMap"></script>
+    </div>
+  </section>
+</body>
+</html>

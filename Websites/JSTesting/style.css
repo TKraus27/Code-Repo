@@ -1,0 +1,153 @@
+html, body {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #88A2AA;
+}
+* {
+  -moz-box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+.slide {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("Media/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Alice", serif;
+  text-align: center;
+  color: #88A2AA;
+  text-shadow: 0 0 6px #BFD7B5;
+}.slide h3 {
+  margin: 0;
+  font-size: 18pt;
+  padding-top: 12%;
+}.slide h1 {
+  font-size: 14pt;
+}
+.header {
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  transition: .5s;
+}.header-down {
+  top: 0;
+  background-color: none;
+}.header-up {
+  top: -85px;
+}.header-down.background {
+  background-color: rgba(255,255,255,.5);
+}
+.nav {
+  height: 60px;
+  width: 100%;
+}.nav ul {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+  margin: 0 auto;
+  justify-items: center;
+}.nav li {
+  height: inherit;
+  text-align: center;
+  border-bottom: 1px solid #88A2AA;
+  box-shadow: 0px 3px 6px -6px #BFD7B5;
+  transition: .2s;
+  width: 150px;
+}.nav li a {
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  font-family: "Alice", serif;
+  font-size: 14pt;
+  text-shadow: 0 0 10px #BFD7B5;
+  text-decoration: none;
+  line-height: 4em;
+  color: #88A2AA;
+  transition: .2s;
+}.nav a:hover {
+  color: #8CBA80;
+}.nav li:hover {
+  border-bottom: 1px solid #8CBA80;
+}
+.graph {
+  height: 800px;
+}
+.graph h3,
+.graph p {
+  text-align: center;
+  color: #7BE3ED;
+}
+#chart {
+  margin: 0 auto;
+}
+.parcoords {
+  display: block;
+}
+.parcoords svg,
+.parcoords canvas {
+  font: 10px sans-serif;
+  position: absolute;
+}
+.parcoords canvas {
+  opacity: 0.9;
+  pointer-events: none;
+}
+.axis .title {
+  font-size: 10px;
+  transform: rotate(-21deg) translate(-5px,-6px);
+  fill: #7BE3ED;
+}
+.axis line,
+.axis path {
+  fill: none;
+  stroke: #7BE3ED;
+  stroke-width: 1px;
+}
+.axis .tick text {
+  fill: white;
+  opacity: 0;
+  pointer-events: none;
+}
+.axis.NAME .tick text {
+  opacity: 1;
+}
+.axis:hover line,
+.axis:hover path,
+.axis.active line,
+.axis.active path {
+  fill: none;
+  stroke: white;
+  stroke-width: 1px;
+}
+.axis:hover .title {
+  font-weight: bold;
+  fill: white;
+}
+.axis:hover .tick text {
+  opacity: 1;
+}
+.axis.active .title {
+  font-weight: bold;
+}
+.axis.active .tick text {
+  opacity: 1;
+  font-weight: bold;
+}
+.brush .extent {
+  fill-opacity: .3;
+  stroke: #fff;
+  stroke-width: 1px;
+}
+#map {
+  border: 2px solid #7BE3ED;
+  width: 60%;
+  height: 400px;
+  margin: 20px auto;
+}

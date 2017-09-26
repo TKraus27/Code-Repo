@@ -1,0 +1,18 @@
+.content #welcome, #coolcat {
+  display: inline-block;
+  width: 45%;
+  padding: 2%;
+}.content #welcome {
+  float: left;
+  height: auto;
+}.content #welcome h2, p {
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .content #welcome, #coolcat {
+    display: block;
+    width: 96%;
+  }.content #welcome {
+    float: none;
+  }
+}

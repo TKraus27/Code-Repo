@@ -1,0 +1,25 @@
+.content #description, #map {
+  display: inline-block;
+  width: 45%;
+}.content #description {
+  float: left;
+  height: auto;
+  padding: 2%;
+}.content #description h2, p {
+  text-align: center;
+}.content #map {
+  padding-bottom: 45%;
+  margin: 2%;
+}
+@media (max-width: 768px) {
+  .content #description, #map {
+      display: block;
+  }.content #description {
+      float: none;
+      width: 96%;
+  }.content #map {
+      width: 90%;
+      padding-bottom: 85%;
+      margin: 3% auto;
+  }
+}
