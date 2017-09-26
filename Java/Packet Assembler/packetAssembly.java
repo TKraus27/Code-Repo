@@ -44,13 +44,13 @@ public class packetAssembly {
         Integer mstat = mStatus.get(mplusp);
         if (mstat != null) {
           if (mstat == 0) {
-            strout = String.format("Message %d:\n", (long)mplusp) + str;
+            strout = String.format("Message %d:\n", (long)mplusp) + strout;
             mStatus.remove(mplusp);
           }else if (mstat == 1) {
-            strout = String.format("Message %d (missing a packet):\n", (long)mplusp) + str;
+            strout = String.format("Message %d (missing a packet):\n", (long)mplusp) + strout;
             mStatus.remove(mplusp);
           }else {
-            strout = String.format("Message %d (missing %d packets):\n", (long)mplusp, mstat) + str;
+            strout = String.format("Message %d (missing %d packets):\n", (long)mplusp, mstat) + strout;
             mStatus.remove(mplusp);
           }
         }
