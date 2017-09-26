@@ -62,7 +62,7 @@ public class packetAssembly {
 		}catch (InputMismatchException e) {
 			System.out.println(e.getMessage());
 		}catch (NumberFormatException e) {
-      System.out.println("Packets must be entered in the following line format:\nmessage ID | packet ID | packets/message | message data");
+      System.out.println("Packets must be entered in the following line format:\nmessage ID | packet index | # of packets/message | message string");
     }
   }
 }
