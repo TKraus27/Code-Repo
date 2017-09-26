@@ -1,4 +1,4 @@
-/**L33Tspeak.java
+/**L33Tspeak.java - Takes a text file with normal characters and translates it to L33T speak
  * @author Tony Kraus
  * @version 5-1-2017
  */
