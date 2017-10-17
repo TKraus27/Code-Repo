@@ -4,4 +4,4 @@ dataTypeFromNames :: String {- the name of the Hawkid datatype -} -> [Ctordecl] 
 dataTypeFromNames n cs = "something"
 
 example :: [Ctordecl]
-example = [("Zero",[]) , ("Suc",["Nat"])
+example = [("Zero",[]) , ("Suc",["Nat"])]

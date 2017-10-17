@@ -8,7 +8,7 @@ sampleBinTree = Node 5 (Node 3 Leaf (Node 4 Leaf Leaf)) (Node 6 Leaf Leaf)
 binTreeToString :: Show a => BinTree a -> String
 binTreeToString Leaf = "*"
 binTreeToString (Node d l r) =
-  "(" ++ (binTreeToString l) ++ " " ++ show d ++ " " ++ (binTreeToString r) ++ ")"
+  "(" ++ binTreeToString l ++ " " ++ show d ++ " " ++ binTreeToString r ++ ")"
 
 instance Show a => Show (BinTree a) where
   show = binTreeToString
@@ -19,7 +19,7 @@ rotateRight x = x
 
 depth :: BinTree a -> Int
 depth Leaf = 0
-depth (Node d l r) = 1 + (max (depth l) (depth r))
+depth (Node d l r) = 1 + max (depth l) (depth r)
 
 size :: BinTree a -> Int
 size Leaf = 0
