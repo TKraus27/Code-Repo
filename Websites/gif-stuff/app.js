@@ -10,7 +10,6 @@ app.get('/', function (req, res) {
   res.render('hello-gif', {gifUrl: gifUrl})
 })
 
-
 app.listen(3000, function () {
   console.log('Gif Search listening on port localhost:3000!');
 });
