@@ -1,12 +1,10 @@
 function initMap() {
-
-
   var myCenter = new google.maps.LatLng(42, -93.0977);
   var mapOptions = {
     center: myCenter,
     zoom: 7,
     mapTypeId: google.maps.MapTypeId.MAP
-  }
+  };
   var map = new google.maps.Map(document.getElementById("map"), mapOptions);
   var marker;
   var position;
@@ -18,6 +16,6 @@ function initMap() {
         map: map,
         label: d.NAME
       });
-    })
-  })
+    });
+  });
 }

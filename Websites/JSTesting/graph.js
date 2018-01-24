@@ -142,7 +142,7 @@ d3.csv('data.csv', function(data) {
         .on("start", brushstart)
         .on("brush", brush)
         .on("end", brush)
-      )
+      );
     })
   .selectAll("rect")
     .attr("x", -8)
@@ -239,4 +239,4 @@ d3.csv('data.csv', function(data) {
 
 function d3_functor(v) {
 return typeof v === "function" ? v : function() { return v; };
-};
+}

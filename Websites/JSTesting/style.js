@@ -7,7 +7,7 @@ $(window).scroll(
   function(){
     didScroll = true;
     var yPos = ($(window).scrollTop()/3);
-    $('div.slide').css('background-position-y', yPos+'px')
+    $('div.slide').css('background-position-y', yPos+'px');
   }
 );
 
