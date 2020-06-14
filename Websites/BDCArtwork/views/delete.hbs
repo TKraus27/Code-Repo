@@ -1,0 +1,28 @@
+<div id="delete-form">
+    <h1>Deleting From {{Category}}</h1>
+    {{#if deleted}}
+        <p>{{deleted}} has been deleted!</p>
+    {{/if}}
+    <form action="manage/delete" method="POST" enctype="multipart/form-data">
+        <input type="hidden" id="category" name="category" value="{{category}}">
+        <label for="fileName">Image To Delete</label>
+        <select id="fileName" name="fileName" onchange="updateImg(this.value)">
+            {{#each files}}
+                <option value="{{this}}">{{this}}</option>
+            {{/each}}
+        </select>
+        <input type="submit" value="Delete">
+    </form>
+    <img id="imageId" src="https://storage.googleapis.com/portfolio-images321/{{category}}/{{files.[0]}}" alt="&nbsp;No Image Found">
+    <script type="text/javascript">
+        function updateImg(image) {
+            let url = 'https://storage.googleapis.com/portfolio-images321/{{category}}/' + image;
+            let img = new Image();
+            img.src = url;
+            img.addEventListener('load', function() {
+                let myImageElement = document.getElementById('imageId');
+                myImageElement.src = url;
+            });
+        }
+    </script>
+</div>

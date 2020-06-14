@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>BDC Artwork</title>
+        <base href="/"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.css"/>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="icon" type="image/png" href="/images/icon.png" />
+    </head>
+    <body>
+        <div id="nav">
+            <a href="javascript:void(0)" id="closebtn" onclick="closeNav()" style="display: {{close}};">&times;</a>
+            <br/><br/>
+            <div id="navlogo">
+                <h1>BDC</h1>
+                <p>Artwork</p>
+            </div>
+            <ul>
+                <li><a class="navlink" href="/">HOME</a></li>
+                <li><a class="navlink" href="/portfolio">PORTFOLIO</a></li>
+                <li><a class="navlink" href="/about">ABOUT ME</a></li>
+                <li><a class="navlink" href="/media">MEDIA</a></li>
+                <li><a class="navlink" href="/contact">CONTACT</a></li>
+                <li><a class="navlink" href="/manage"><span class="glyphicon glyphicon-lock"></span></a></li>
+            </ul>
+        </div>
+        <div id="navM">
+            <ul>
+                <li><a href="/"><span class="glyphicon glyphicon-home"></span><br/>Home</a></li>
+                <li><a href="/portfolio"><span class="glyphicon glyphicon-picture"></span><br/>Portfolio</a></li>
+                <li><a href="/about"><span class="glyphicon glyphicon-book"></span><br/>About Me</a></li>
+                <li><a href="/media"><span class="glyphicon glyphicon-globe"></span><br/>Media</a></li>
+                <li><a href="/contact"><span class="glyphicon glyphicon-envelope"></span><br/>Contact</a></li>
+            </ul>
+        </div>
+        <div id="main">
+            <a href="javascript:void(0)" id="openbtn" onclick="openNav()"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+            {{{body}}}
+        </div>
+        <script type="text/javascript">
+            function openNav() {
+                document.getElementById("nav").style.left = "0";
+                document.getElementById("main").style.marginLeft = "160px";
+            }
+
+            function closeNav() {
+                document.getElementById("nav").style.left = "-160px";
+                document.getElementById("main").style.marginLeft = "0";
+            }
+        </script>
+    </body>
+</html>

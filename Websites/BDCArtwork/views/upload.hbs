@@ -1,0 +1,27 @@
+<div id="upload-form">
+    <h1>Upload</h1>
+    {{# if uploaded}}
+        <p>Image was successfully uploaded!</p>
+    {{/if}}
+    {{# if exists}}
+        <p style="color: red;">Image with the same name already exists</p>
+    {{/if}}
+    <form action="manage/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <label for="description">Description</label>
+        <textarea rows="3" cols="60" id="description" name="description"></textarea><br>
+        <label for="category">Category</label>
+        <select id="category" name="category">
+            <option value="acrylic">Acrylic</option>
+            <option value="chalk">Chalk</option>
+            <option value="charcoal">Charcoal</option>
+            <option value="graphite">Graphite</option>
+            <option value="marker">Marker</option>
+            <option value="mixed_media">Mixed Media</option>
+            <option value="mural">Mural</option>
+            <option value="oil">Oil</option>
+            <option value="misc">Misc</option>
+        </select>
+        <input type="submit" value="Upload">
+    </form>
+</div>

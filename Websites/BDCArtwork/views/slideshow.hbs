@@ -1,0 +1,60 @@
+<div id="slideshow">
+    {{#each imgs}}
+        <div class="slide">
+            <img src="{{this.image}}"/>
+            {{# if this.description}}
+                <div class="caption">{{this.description}}</div>
+            {{/if}}
+        </div>
+    {{/each}}
+
+    <a class="prevSlide" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="nextSlide" onclick="plusSlides(1)">&#10095;</a>
+
+    <script type="text/javascript">
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("slide");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex-1].style.display = "flex";
+        }
+
+        function keySlide(keyCodeNumber) {
+            var LEFT = 37, RIGHT = 39;
+
+            switch (keyCodeNumber) {
+                case LEFT:
+                    plusSlides(-1);
+                    break;
+                case RIGHT:
+                    plusSlides(1);
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        function checkKeycode(event) {
+            var keyDownEvent = event || window.event,
+                    keycode = (keyDownEvent.which) ? keyDownEvent.which : keyDownEvent.keyCode;
+
+            keySlide(keycode);
+
+            return false;
+        }
+
+        document.onkeydown = checkKeycode;
+    </script>
+</div>

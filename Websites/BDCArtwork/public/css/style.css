@@ -1,0 +1,630 @@
+@import url('https://fonts.googleapis.com/css?family=Arsenal|Montserrat');
+* { box-sizing: border-box; }
+body {
+    background-color: #2c4a4c;
+}
+h1, ul {
+    margin: 0;
+}
+h1, h2, p {
+    color: white;
+    text-align: center;
+    font-family: 'Arsenal', sans-serif;
+}
+#main {
+    transition: margin-left .5s ease;
+    margin-left: 160px;
+}
+#homepage {
+    display: flex;
+    flex-wrap: wrap;
+}
+#homepage .col {
+    flex: 33%;
+    max-width: 35%;
+}
+#homepage .colM {
+    flex: 50%;
+    max-width: 50%;
+    display: none;
+}
+#login-form {
+    width: 300px;
+    margin: 30px auto;
+}
+#login-form h1 {
+    text-align: center;
+    font-size: 24px;
+    padding: 20px 0 20px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+#login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dddddd;
+    margin-bottom: 10px;
+}
+#login-form input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #535b63;
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+}
+#login-form input[type="submit"]:hover {
+    color: lightgreen;
+}
+#manage-page {
+    width: 300px;
+    margin: 30px auto;
+}
+#manage-page h1 {
+    text-align: center;
+    font-size: 24px;
+    padding: 20px 0 20px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+#manage-page ul {
+    padding: 0;
+    list-style: none;
+    width: 100%;
+}
+#manage-page li {
+    padding: 5px 0 5px;
+    font-size: 10pt;
+}
+#manage-page a {
+    width: 100%;
+    padding: 15px;
+    background-color: #535b63;
+    border: 0;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+#manage-page a:hover {
+    color: lightgreen;
+    text-decoration: none;
+}
+#upload-form {
+    width: 300px;
+    margin: 30px auto;
+}
+#upload-form h1 {
+    text-align: center;
+    font-size: 24px;
+    padding: 20px 0 20px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+#upload-form input[type="file"] {
+    width: 100%;
+    padding: 15px;
+    color: #ffffff;
+}
+#upload-form label {
+    color: #ffffff;
+}
+#upload-form textarea {
+    width: 100%;
+    padding: 3px;
+    border: 1px solid #dddddd;
+    margin-bottom: 8px;
+}
+#upload-form select {
+    width: 100%;
+    padding: 3px;
+    border: 1px solid #dddddd;
+    margin-bottom: 15px;
+}
+#upload-form input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #535b63;
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+#upload-form input[type="submit"]:hover {
+    color: lightgreen;
+}
+#_delete-category {
+    width: 300px;
+    margin: 30px auto;
+}
+#_delete-category h1 {
+    text-align: center;
+    font-size: 24px;
+    padding: 20px 0 20px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+#_delete-category ul {
+    padding: 0;
+    list-style: none;
+    width: 100%;
+}
+#_delete-category li {
+    padding: 5px 0 5px;
+    font-size: 10pt;
+}
+#_delete-category a {
+    width: 100%;
+    padding: 15px;
+    background-color: #535b63;
+    border: 0;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+#_delete-category a:hover {
+    color: lightgreen;
+    text-decoration: none;
+}
+#delete-form {
+    width: 300px;
+    margin: 30px auto;
+}
+#delete-form h1 {
+    text-align: center;
+    font-size: 24px;
+    padding: 20px 0 20px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+#delete-form label {
+    color: #ffffff;
+}
+#delete-form select {
+    width: 100%;
+    padding: 3px;
+    border: 1px solid #dddddd;
+    margin-bottom: 15px;
+}
+#delete-form img {
+    width: 100%;
+    padding: 3px;
+    color: white;
+    margin-bottom: 15px;
+}
+#delete-form input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #535b63;
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+#delete-form input[type="submit"]:hover {
+    color: lightgreen;
+}
+#change-password {
+    width: 300px;
+    margin: 30px auto;
+}
+#change-password h1 {
+    text-align: center;
+    font-size: 24px;
+    padding: 20px 0 20px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+#change-password label {
+    color: #ffffff;
+}
+#change-password input[type="password"] {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #dddddd;
+    margin-bottom: 7px;
+}
+#change-password input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px auto;
+    background-color: #535b63;
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+#change-password input[type="submit"]:hover {
+    color: lightgreen;
+}
+#logo {
+    display: none;
+}
+#contactpage {
+    margin: 30px auto;
+    width: 90%;
+}
+#contactpage p {
+    font-size: 12pt;
+    margin: 0 auto;
+    width: 30%;
+    padding-right: 10px;
+}
+#contactpic {
+    display: block;
+    margin: 30px auto 30px;
+    width: 30%;
+    box-shadow: 0 0 8px black;
+}
+#portfoliopage {
+    margin: 20px auto;
+    text-align: center;
+}
+.imgheader {
+    border-radius: 8px;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    box-shadow: 0 0 8px black;
+    margin: 8px;
+    border: 1px solid #9b9b9b;
+    width: 20%;
+    padding-top: 20%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    transition: border-color .2s;
+}
+.imgheader:hover {
+    border-color: #545454;
+}
+.imgheader p {
+    position: absolute;
+    margin: 0 auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+}
+#charcoal {
+    background-image: url("../images/charcoal_header.jpg");
+}
+#acrylic {
+    background-image: url("../images/acrylic_header.jpg");
+}
+#graphite {
+    background-image: url("../images/graphite_header.jpg");
+}
+#chalk {
+    background-image: url("../images/chalk_header.jpg");
+}
+#mixedmedia {
+    background-image: url("../images/mixed_media_header.jpg");
+}
+#mural {
+    background-image: url("../images/mural_header.jpg");
+}
+#marker {
+    background-image: url("../images/marker_header.png");
+}
+#misc {
+    background-image: url("../images/misc_header.jpg");
+}
+#slideshow {
+    height: 100vh;
+    z-index: 0;
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+.slide {
+    height: 100%;
+    background-color: black;
+    display: none;
+    align-items: center;
+}
+.slide img {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    vertical-align: middle;
+    display: block;
+    margin: auto;
+    max-height: 100vh;
+    max-width: 100%;
+}
+@-webkit-keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+}
+.prevSlide, .nextSlide {
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.nextSlide {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prevSlide:hover, .nextSlide:hover {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0,0,0,0.8);
+}
+.caption {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: rgba(0,0,0,0.8);
+}
+#aboutpage {
+    margin: 20px auto;
+    width: 100%;
+}
+#aboutpage p {
+    width: 700px;
+    margin: 5px auto;
+    font-size: 12pt;
+    text-align: left;
+}
+#aboutpic {
+    display: block;
+    margin: 30px auto 30px;
+    width: 500px;
+    border-radius: 5px;
+    box-shadow: 0 0 8px black;
+}
+#mediapage {
+    width: 100%;
+    margin: 30px auto;
+}
+#mediapage p {
+    font-size: 12pt;
+}
+#mediapage iframe {
+    width: 550px;
+    height: 309px;
+    border: none;
+    box-shadow: 0 0 8px black;
+    display: block;
+    margin: 15px auto;
+}
+#mediapage a {
+    width: 400px;
+    display: block;
+    margin: 1px auto;
+    text-align: center;
+    color: #afafaf;
+    font-family: 'Montserrat', sans-serif;
+}
+#mediapage a:hover {
+    color: lightgreen;
+}
+#closebtn {
+    line-height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    font-size: 20pt;
+}
+#openbtn {
+    z-index: 1;
+    color: #afafaf;
+    text-decoration: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    line-height: 30px;
+    width: 30px;
+    padding: 8px;
+    font-size: 17pt;
+}
+#openbtn:hover {
+    color: lightgreen;
+}
+#navlogo {
+    width: 100%;
+}
+#nav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #0f0f0f;
+    overflow-x: hidden;
+    box-shadow: 2px 0 8px 0 black;
+    transition: left 0.5s ease;
+}
+#nav ul {
+    padding: 10px 0 0;
+    width: 100%;
+}
+#nav li {
+    padding: 5px 0 5px;
+    justify-content: center;
+    list-style: none;
+    font-size: 10pt;
+}
+#nav a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    color: #afafaf;
+    font-family: 'Montserrat', sans-serif;
+}
+#nav a:hover {
+    color: lightgreen;
+}
+.navlink {
+    line-height: 25px;
+}
+.navlink:before {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 25px;
+    width: 0;
+    position: absolute;
+    left: 15%;
+    z-index: -1;
+    background: transparent;
+    transition: width .3s ease, background-color .3s ease;
+}
+.navlink:hover:before {
+    width: 70%;
+    background: #191919;
+}
+#navM {
+    line-height: 4vh;
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    display: none;
+    background-color: #0f0f0f;
+    box-shadow: 0 2px 8px 0 black;
+}
+#navM ul {
+    padding: 0;
+}
+#navM li {
+    display: inline-block;
+    padding: 6px 4px 0 4px;
+}
+#navM a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    color: #afafaf;
+    font-family: 'Montserrat', sans-serif;
+}
+#navM a:hover {
+    color: lightgreen;
+}
+
+@media screen and (max-width: 768px) {
+    #main {
+        margin-left: 0;
+        margin-top: 10vh;
+    }
+    #homepage {
+        height: 90vh;
+        overflow: hidden;
+    }
+    #logo {
+        display: block;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        border-radius: 50%;
+        background-color: #0f0f0f;
+        box-shadow: 0 0 8px 0 black;
+        height: 100px;
+        width: 100px;
+        margin-left: -50px;
+    }
+    #logo h1,p {
+        color: #d7d7d7;
+    }
+    #nav {
+        display: none;
+    }
+    #navM {
+        display: block;
+    }
+    #openbtn {
+        display: none;
+    }
+    .slideshow {
+        height: 90vh;
+        overflow: hidden;
+    }
+    .slide img {
+        max-height: 90vh;
+    }
+    .prevSlide:hover, .nextSlide:hover {
+        background-color: rgba(0,0,0,0);
+    }
+    #aboutpage {
+        padding-top: 16px;
+    }
+    #portfoliopage {
+        padding-top: 16px;
+    }
+    #mediapage {
+        padding-top: 16px;
+    }
+    #contactpage {
+        padding-top: 16px;
+    }
+}
+@media screen and (max-width: 450px) {
+    #homepage .col {
+        display: none;
+    }
+    #homepage .colM {
+        display: block;
+    }
+    .imgheader {
+        width: 25%;
+        padding-top: 25%;
+    }
+    #aboutpic {
+        width: 80%;
+    }
+    #aboutpage p {
+        width: 90%;
+    }
+    #mediapage a,p {
+        width: 90%;
+        margin: auto;
+    }
+    #mediapage iframe {
+        width: 70%;
+        height: auto;
+    }
+    #contactpage p {
+        width: 90%;
+    }
+    #contactpic {
+        width: 60%;
+    }
+}
+@media screen and (max-width: 320px) {
+    #navM li {
+        padding: 3px 1px 0 1px;
+    }
+}

@@ -1,0 +1,10 @@
+<div id="login-form">
+    <h1>Login</h1>
+    {{#if failed}}
+        <p style="color: red;">Incorrect Password</p>
+    {{/if}}
+    <form action="manage/login" method="POST">
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="submit">
+    </form>
+</div>
