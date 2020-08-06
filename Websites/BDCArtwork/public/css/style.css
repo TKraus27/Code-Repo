@@ -334,7 +334,6 @@ h1, h2, p {
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
-    vertical-align: middle;
     display: block;
     margin: auto;
     max-height: 100vh;
