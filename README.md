@@ -1,1 +1,1 @@
-A repo of various projects that I have worked on over the years
+A repository of various projects that I have worked on over the years
