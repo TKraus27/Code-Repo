@@ -1,6 +1,8 @@
 /**L33Tspeak.java - Takes a text file with normal characters and translates it to L33T speak
  * @author Tony Kraus
  * @version 5-1-2017
+ * 
+ * challenge from r/dailyprogrammer subreddit (https://www.reddit.com/r/dailyprogrammer/comments/67dxts/20170424_challenge_312_easy_l33tspeak_translator/)
  */
 
 import java.util.*;

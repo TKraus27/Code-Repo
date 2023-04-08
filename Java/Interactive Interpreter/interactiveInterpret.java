@@ -1,6 +1,8 @@
 /**interactiveInterpret.java - interprets math functions and returns the appropriate value
  * @author Tony Kraus
  * @version 9-27-17
+ * 
+ * challenge from r/dailyprogrammer subreddit (https://www.reddit.com/r/dailyprogrammer/comments/7096nu/20170915_challenge_331_hard_interactive/)
  */
 
 import java.util.*;

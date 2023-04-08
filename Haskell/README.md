@@ -1,0 +1,1 @@
+small haskell project for a college class that creates a binary tree

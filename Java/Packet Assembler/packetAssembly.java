@@ -1,6 +1,8 @@
 /**packetAssembly.java - Assemble packets based in order given 4 different arguments including packet data
  * @author Tony Kraus
  * @version 9-26-17
+ * 
+ * challenge from r/dailyprogrammer subreddit (https://www.reddit.com/r/dailyprogrammer/comments/72ivih/20170926_challenge_333_easy_packet_assembler/)
  */
 
 import java.util.*;

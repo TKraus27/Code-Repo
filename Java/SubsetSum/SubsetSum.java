@@ -1,6 +1,8 @@
 /**SubsetSum.java
  * @author Tony Kraus
  * @version 5-3-2017
+ * 
+ * challenge from r/dailyprogrammer subreddit (https://www.reddit.com/r/dailyprogrammer/comments/68oda5/20170501_challenge_313_easy_subset_sum/)
  */
 
 import java.util.*;

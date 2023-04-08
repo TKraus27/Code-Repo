@@ -1,6 +1,8 @@
 /**ConcatInt.java
  * @author Tony Kraus
  * @version 5-10-2017
+ * 
+ * challenge from r/dailyprogrammer subreddit (https://www.reddit.com/r/dailyprogrammer/comments/69y21t/20170508_challenge_314_easy_concatenated_integers/)
  */
 
 import java.util.*;
